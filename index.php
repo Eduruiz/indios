@@ -99,10 +99,10 @@
 
         <footer>
             <div class="container">
-                <div class="eight columns">
-                    <span>Índios Nativos Valvulados &copy; todos os direitos reservados</span>
+                <div class="nine columns">
+                    <span>Índios Nativos Valvulados &copy; <br class="baby"> todos os direitos reservados</span>
                 </div>
-                <div class="eight columns midias">
+                <div class="seven columns midias">
                     <ul>
                         <li>nossas mídias</li> 
                         <li><a href="http://instagram.com/indiosnativosvalvulados"><i class="fa fa-instagram"></i></a></li>

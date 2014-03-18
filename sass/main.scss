@@ -98,14 +98,26 @@ textarea {
    ========================================================================== */
 
 /* ==========================================================================
-   Imports
+   Imports and Mixings
    ========================================================================== */
 
-    @import "compass/css3";
+    @import 'compass/css3';
     @import 'normalize';
     @import 'skeleton';
 
     @import url(http://fonts.googleapis.com/css?family=Vidaloka);
+
+    @mixin breakpoint($point) {
+      @if $point == papa-bear {
+        @media (max-width: 959px) { @content; }
+      }
+      @else if $point == mama-bear {
+        @media (max-width: 767px) { @content; }
+      }
+      @else if $point == baby-bear {
+        @media (max-width: 525px)  { @content; }
+      }
+    }
 
 /* ==========================================================================
    Grid
@@ -196,6 +208,12 @@ header{
             height: 105px;
             margin-top: -5px
         }
+
+        @include breakpoint(mama-bear){
+            float: none;
+            margin: 0 auto;
+            display: block;
+        }
     }
 
     .menu{
@@ -203,17 +221,35 @@ header{
         width: 510px;
         margin-top: 30px;
 
+        @include breakpoint(mama-bear) {
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        @include breakpoint(baby-bear) {
+            text-align: center;
+        }
+
         ul li{
             display: block;
             float: left;
+            @include breakpoint(baby-bear){
+                float: none;
+            }
+
             &:after{
                 padding: 0 10px;
-                content: "/ "
+                content: "/ ";
+
+                @include breakpoint(baby-bear){
+                    padding: 0;
+                    content: "";
+                }
             }
             &:last-child{
                 &:after{
                     padding: 0;
-                    content: ""
+                    content: "";
                 }
             }
         }
@@ -221,9 +257,12 @@ header{
         a{
             font-size: 15px;
             text-transform: uppercase;
-            &.active{color: $yellow;}
+            &.active{ color: $yellow; }
             &:hover{ color: $yellow; }
-
+            
+            @include breakpoint(mama-bear) {
+                font-size: 14px;
+            }
         }
     }
 }
@@ -239,6 +278,14 @@ header{
     height: 534px;
     margin: 0 0 30px;
     background: url("../images/preloader.gif") center no-repeat;
+
+    @include breakpoint(papa-bear) {
+        height: 195px;
+    }
+
+    @include breakpoint(mama-bear) {
+        height: 140px;
+    }
     
     .flex-viewport{
         overflow: visible !important;
@@ -264,6 +311,10 @@ header{
     }
 }
 
+@include breakpoint(mama-bear) {
+    .fb-like-box, .fb-like-box span, .fb-like-box span iframe[style] { width: 100% !important; }
+}
+
 .soundcloud{
     iframe{ width: 100%; height: 300px; }
 }
@@ -280,11 +331,21 @@ footer{
     line-height: 180%;
     background-color: $yellow;
 
+    @include breakpoint(mama-bear){
+        text-align: center;
+    }
+
     .midias{
         text-align: right;
         vertical-align: middle;
         ul{
             float: right;
+            @include breakpoint(mama-bear){
+                float: none;
+                width: 207px;
+                margin: auto;
+            }
+
             li{
                 list-style-type: none;
                 float: left;
@@ -323,6 +384,18 @@ footer{
    ========================================================================== */
 
 /*
+ * Responsive Helpers
+ */
+
+ .baby{
+    display: none;
+    @include breakpoint(baby-bear){
+        display: block;
+    }
+ }
+
+
+ /*
  * Image replacement
  */
 
