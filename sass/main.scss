@@ -123,18 +123,18 @@ textarea {
    Grid
    ========================================================================== */
 
-// // Grid Mixin by Chriss Coyer
-// @mixin rowMachine($numPerRow, $margin) {
-//   width: ((100% - (($numPerRow - 1) * $margin)) / $numPerRow);
-//   &:nth-child(n) {
-//     margin-bottom: $margin;
-//     margin-right: $margin;
-//   }
-//   &:nth-child(#{$numPerRow}n) {
-//     margin-right: 0;
-//     margin-bottom: 0;
-//   }
-// }
+// Grid Mixin by Chriss Coyer
+@mixin rowMachine($numPerRow, $margin) {
+  width: ((100% - (($numPerRow - 1) * $margin)) / $numPerRow);
+  &:nth-child(n) {
+    margin-bottom: $margin;
+    margin-right: $margin;
+  }
+  &:nth-child(#{$numPerRow}n) {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
 
 /* ==========================================================================
    Pallet
@@ -143,6 +143,7 @@ textarea {
     $black: #000;
     $white: #fff;
     $yellow: #ffcc00;
+    $grey: #f7f7f7;
 
     // fonts
     $vidaloka: 'Vidaloka', verdana, serif;
@@ -319,6 +320,22 @@ header{
     iframe{ width: 100%; height: 300px; }
 }
 
+.home{
+    .divider{
+        margin-bottom: -10px;
+        position: relative;
+    }
+}
+
+.divider{
+    height: 20px;
+    background: url("../images/divider.png") repeat-x;
+}
+
+.bg-grey{
+    background-color: $grey;
+}
+
 .video{
     iframe{ width: 100%; height: 350px; }
 }
@@ -327,6 +344,7 @@ header{
 // Footer
 footer{
     padding: 20px 0 15px;
+    margin-top: 25px;
     text-transform: uppercase;
     line-height: 180%;
     background-color: $yellow;
@@ -365,6 +383,15 @@ footer{
 .ornament{
     height: 44px;
     background: url("../images/ornament.png") repeat-x;
+}
+
+// Sobre Nós
+.member{
+
+    float: left;
+    @include rowMachine(5, 5.6%);
+
+    img{ width: 100%; }
 }
 
 

@@ -110,6 +110,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/divider.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1127,
+		"inputAbbreviatedPath": "\/images\/divider.png",
+		"outputAbbreviatedPath": "\/images\/divider.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/grid.png": {
 		"fileType": 32768,
 		"ignore": 0,
