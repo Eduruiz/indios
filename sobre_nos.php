@@ -10,12 +10,12 @@
            <h1>Sobre nós</h1>
        </div>
 
-        <div class="divider"></div>
+        <div class="divider top"></div>
         
         <div class="container">
             <div class="row">
                 <div class="five columns">
-                    <img src="images/isso-e-tudo-sobre-ela-capa.jpg" alt="Quem Somos" />
+                    <img src="images/isso-e-tudo-sobre-ela-capa.jpg"  class="img-responsive" alt="Quem Somos" />
                 </div>
                 <div class="eleven columns">
                     <blockquote>
@@ -30,7 +30,7 @@
                         <br />
                         A personalidade do projeto fica por conta do contraste entre o vocal choroso de Daniel Barreto e o instrumental de gosto animado, mesmo em seus trechos mais melancólicos; e por um certo frescor digital do EP, tanto nos arranjos de influências mais modernas quanto nos trechos de samba e jazz.”
                         <br />
-                        <span class="yellow">Marcus Lopes - <a href="http://www.keepitalive.com.br">keepitalive.com.br</a></span>
+                        <span class="yellow">Marcus Lopes - <a href="http://www.keepitalive.com.br" class="yellow">keepitalive.com.br</a></span>
                     </p>
                 </div>
             </div>

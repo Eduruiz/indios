@@ -28,6 +28,14 @@
 		"outputAbbreviatedPath": "\/config.rb",
 		"outputPathIsSetByUser": 0
 		},
+	"\/contato.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/contato.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/flexslider.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -110,6 +118,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/blockquote.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1597,
+		"inputAbbreviatedPath": "\/images\/blockquote.png",
+		"outputAbbreviatedPath": "\/images\/blockquote.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/divider.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -130,6 +148,16 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/isso-e-tudo-sobre-ela-capa.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29714,
+		"inputAbbreviatedPath": "\/images\/isso-e-tudo-sobre-ela-capa.jpg",
+		"outputAbbreviatedPath": "\/images\/isso-e-tudo-sobre-ela-capa.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -137,6 +165,56 @@
 		"initialSize": 5498,
 		"inputAbbreviatedPath": "\/images\/logo.png",
 		"outputAbbreviatedPath": "\/images\/logo.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/members\/barretinho.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8504,
+		"inputAbbreviatedPath": "\/images\/members\/barretinho.jpg",
+		"outputAbbreviatedPath": "\/images\/members\/barretinho.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/members\/cal.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5973,
+		"inputAbbreviatedPath": "\/images\/members\/cal.jpg",
+		"outputAbbreviatedPath": "\/images\/members\/cal.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/members\/gu.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6013,
+		"inputAbbreviatedPath": "\/images\/members\/gu.jpg",
+		"outputAbbreviatedPath": "\/images\/members\/gu.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/members\/re.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5787,
+		"inputAbbreviatedPath": "\/images\/members\/re.jpg",
+		"outputAbbreviatedPath": "\/images\/members\/re.jpg",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/members\/ti.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8528,
+		"inputAbbreviatedPath": "\/images\/members\/ti.jpg",
+		"outputAbbreviatedPath": "\/images\/members\/ti.jpg",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
@@ -159,6 +237,46 @@
 		"outputAbbreviatedPath": "\/images\/slider\/1.jpg",
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/inc\/chromeframe.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/inc\/chromeframe.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/inc\/footer.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/inc\/footer.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/inc\/head.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/inc\/head.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/inc\/header.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/inc\/header.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/inc\/scripts.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/inc\/scripts.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
 		},
 	"\/index.php": {
 		"fileType": 8192,
@@ -352,6 +470,14 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/sobre_nos.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sobre_nos.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [

@@ -144,6 +144,8 @@ textarea {
     $white: #fff;
     $yellow: #ffcc00;
     $grey: #f7f7f7;
+    $dark_grey: #888;
+    $wine: #4f153f;
 
     // fonts
     $vidaloka: 'Vidaloka', verdana, serif;
@@ -152,8 +154,22 @@ textarea {
 /* ==========================================================================
    Main
    ========================================================================== */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 //Typography
 
+h1{
+    margin: 15px 0;
+    font-size: 33px;
+    font-weight: 100;
+    line-height: 120%;
+    color: $dark_grey;
+    text-transform: uppercase;
+}
 
 h2{
     display: block;
@@ -170,6 +186,11 @@ h2{
     }
 }
 
+h3{
+    @extend h1;
+    font-size: 21px;
+}
+
 a,
 p,
 pre,
@@ -180,9 +201,68 @@ pre,
     text-decoration: none; 
 }
 
+address{
+    font-style: normal;
+}
+
+.yellow{
+    color: $yellow !important;
+}
+
+blockquote{
+    position: relative;
+    font-size: 19px;
+    letter-spacing: 1px;
+    line-height: 160%;
+    margin: 0 40px;
+    color: $wine;
+
+    &:before{
+        content: url("../images/blockquote.png");
+        position: absolute;
+        left: -80px;
+    }
+}
+
 ul{
     padding: 0;
     margin: 0;
+}
+
+placeholder{
+    color: $grey;
+}
+
+input,
+textarea
+{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ccc;
+    font-family: $vidaloka;
+    color: $dark-grey;
+    outline: none;
+}
+
+input[type="submit"]{
+    width: auto;
+}
+
+.arrow-button{
+    color: $yellow;
+    padding-right: 45px;
+    text-transform: uppercase;
+    background: transparent url("../images/small-arrow.png") 62px center no-repeat;
+    transition: all .3s;
+    &:hover{ background-position: 59px center; }
+
+}
+
+//Responsive Images
+.img-responsive{
+    width: 100%;
 }
 
 //Content
@@ -255,6 +335,10 @@ header{
             }
         }
 
+        ul > li > ul{
+            display: none;
+        }
+
         a{
             font-size: 15px;
             text-transform: uppercase;
@@ -301,6 +385,9 @@ header{
         display: block;
         width: 100%;
         font-size: 14px;
+        transition: color .2s;
+
+        &:hover{ color: $yellow; }
     }
     .bar-ornament{
         float: left;
@@ -332,12 +419,48 @@ header{
     background: url("../images/divider.png") repeat-x;
 }
 
+.divider.top{
+    margin-bottom: 20px;
+}
+
 .bg-grey{
     background-color: $grey;
 }
 
 .video{
     iframe{ width: 100%; height: 350px; }
+}
+
+
+// Sobre nós
+.sobre_nos{
+    p,
+    span,
+    a
+    {
+        margin-top: 0;
+        font-size: 14px;
+        color: $wine;
+        line-height: 160%;
+    }
+
+    @include breakpoint(papa-bear){
+        blockquote{ font-size: 16px; }
+    }
+    @include breakpoint(mama-bear){
+        blockquote{
+            margin: 20px 0;
+        }
+    }
+}
+
+//Contato
+.contato{
+    .content{
+        .eight{ padding-right: 40px }
+        textarea{ height: 200px; }
+        .arrow-button{ float: right; }
+    }
 }
 
 
